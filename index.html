@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Little Star Who Lost Its Light</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #020111, #0b1d51, #1b335f);
+      color: white;
+      overflow-x:hidden;
+    }
+
+    header{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+      position:relative;
+    }
+
+    .stars{
+      position:absolute;
+      width:100%;
+      height:100%;
+      top:0;
+      left:0;
+      overflow:hidden;
+      z-index:0;
+    }
+
+    .star{
+      position:absolute;
+      width:3px;
+      height:3px;
+      background:white;
+      border-radius:50%;
+      animation: twinkle 3s infinite ease-in-out;
+    }
+
+    @keyframes twinkle{
+      0%,100%{
+        opacity:0.2;
+      }
+      50%{
+        opacity:1;
+      }
+    }
+
+    .hero{
+      position:relative;
+      z-index:2;
+      max-width:800px;
+    }
+
+    h1{
+      font-size:4rem;
+      margin-bottom:20px;
+      color:#ffe27a;
+      text-shadow:0 0 20px rgba(255,226,122,0.7);
+    }
+
+    .subtitle{
+      font-size:1.3rem;
+      color:#d9e6ff;
+      line-height:1.8;
+    }
+
+    section.story{
+      max-width:900px;
+      margin:auto;
+      padding:80px 20px;
+      line-height:2;
+      font-size:1.1rem;
+    }
+
+    .card{
+      background: rgba(255,255,255,0.08);
+      border:1px solid rgba(255,255,255,0.1);
+      padding:30px;
+      border-radius:20px;
+      margin-bottom:30px;
+      backdrop-filter: blur(8px);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+      box-shadow:0 10px 30px rgba(255,255,255,0.1);
+    }
+
+    .quote{
+      font-style:italic;
+      color:#ffe27a;
+      margin:20px 0;
+    }
+
+    .moral{
+      background: linear-gradient(135deg,#ffe27a,#ffb347);
+      color:#111;
+      padding:40px;
+      border-radius:25px;
+      font-weight:bold;
+      font-size:1.2rem;
+      text-align:center;
+      box-shadow:0 10px 30px rgba(255,200,0,0.3);
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      color:#b8c7ff;
+    }
+
+    .moon{
+      width:120px;
+      height:120px;
+      background:#fff6d5;
+      border-radius:50%;
+      position:absolute;
+      top:80px;
+      right:100px;
+      box-shadow:0 0 40px rgba(255,255,200,0.8);
+      z-index:1;
+    }
+
+    @media(max-width:768px){
+      h1{
+        font-size:2.5rem;
+      }
+
+      .subtitle{
+        font-size:1rem;
+      }
+
+      .moon{
+        width:80px;
+        height:80px;
+        right:30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="stars" id="stars"></div>
+    <div class="moon"></div>
+
+    <div class="hero">
+      <h1>✨ The Little Star Who Lost Its Light ✨</h1>
+      <p class="subtitle">
+        A magical story about self-worth, hope, and discovering that even the smallest light can brighten someone's world.
+      </p>
+    </div>
+  </header>
+
+  <section class="story">
+
+    <div class="card">
+      <p>
+        Once upon a time, far beyond the clouds and high up in the endless sky, there lived a small star named <strong>Luma</strong>.
+      </p>
+
+      <p>
+        While the other stars sparkled brightly like diamonds, Luma’s light was soft and faint.
+      </p>
+
+      <div class="quote">
+        “Why can’t I shine like all of you?”
+      </div>
+
+      <p>
+        The other stars didn’t understand her sadness, and slowly, Luma drifted away from everyone.
+      </p>
+    </div>
+
+    <div class="card">
+      <p>
+        Every night, she watched people on Earth admire the brightest stars.
+      </p>
+
+      <div class="quote">
+        “Look at that bright star!”  
+        <br/>
+        “The sky is beautiful tonight!”
+      </div>
+
+      <p>
+        But nobody ever noticed Luma.
+      </p>
+
+      <p>
+        One night, feeling invisible and unimportant, she stopped shining completely.
+      </p>
+    </div>
+
+    <div class="card">
+      <p>
+        The wise old Moon noticed immediately.
+      </p>
+
+      <div class="quote">
+        “Dear Luma, why have you stopped shining?”
+      </div>
+
+      <p>
+        Luma answered sadly:
+      </p>
+
+      <div class="quote">
+        “Because my light doesn’t matter.”
+      </div>
+
+      <p>
+        The Moon smiled gently and invited her to watch the Earth below.
+      </p>
+    </div>
+
+    <div class="card">
+      <p>
+        Down in a small village lived a little girl named Anna.
+      </p>
+
+      <p>
+        Every night, Anna loved staring at the stars before sleeping.
+      </p>
+
+      <div class="quote">
+        “That little star feels special… like it’s shining just for me.”
+      </div>
+
+      <p>
+        Luma heard those words.
+      </p>
+
+      <p>
+        For the first time, someone had noticed her gentle light.
+      </p>
+    </div>
+
+    <div class="card">
+      <p>
+        Slowly, Luma began shining again — not brighter than the others, but warmer and steadier than before.
+      </p>
+
+      <p>
+        She finally understood:
+      </p>
+
+      <div class="quote">
+        “Not every light needs to be the brightest to matter.”
+      </div>
+    </div>
+
+    <div class="moral">
+      ✨ Moral of the Story ✨
+      <br/><br/>
+      You don’t have to be the brightest to be important.
+      Even the smallest light can bring comfort and happiness to others.
+    </div>
+
+  </section>
+
+  <footer>
+    Made with ✨ and imagination
+  </footer>
+
+  <script>
+    const starsContainer = document.getElementById("stars");
+
+    for(let i = 0; i < 150; i++){
+      const star = document.createElement("div");
+      star.classList.add("star");
+
+      star.style.top = Math.random() * 100 + "%";
+      star.style.left = Math.random() * 100 + "%";
+
+      star.style.animationDuration = (Math.random() * 3 + 2) + "s";
+
+      starsContainer.appendChild(star);
+    }
+  </script>
+
+</body>
+</html>
